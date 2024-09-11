@@ -1,7 +1,9 @@
-# projeto-fabrica-de-software-docs
+# Documentação do Projeto Fábrica de Software
 Esse projeto é feito para a documentação da disciplina de Qualidade de Software e busca desenvolver um mini e-commerce, chamado EvoSports.
 
-<h2>Tipos de Dados:</h2>
+<br/>
+
+<h1>Tipos de Dados:</h1>
 <ul>
   <li>nomeProduto: string</li>
   <li>descricaoProduto: string</li>
@@ -11,13 +13,18 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
   <li>statusProduto: integer (0 = inativo; 1 = ativo)</li>
 </ul>
 
-<h2>Como consumir a API?</h2>
-<h4>Listar Produtos</h4>
+<br/>
+
+<h1>Como consumir a API?</h1>
+
+<h2>Listar produtos</h2>
 <ul>
   <li>Envie a requisição <b>GET</b> para o seguinte endpoint: https://apoleon.com.br/api/listarProdutos</li>
 </ul>
 
-<h4>Inserir um novo produto</h4>
+<br/><br/>
+
+<h2>Inserir um novo produto</h2>
 <ul>
   <li>Envie a requisição <b>POST</b> para o seguinte endpoint: https://apoleon.com.br/api/inserirProduto</li>
   <li>Formatação dos dados para envio ao endpoint: </li>
@@ -36,11 +43,13 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
     }
    ```
 
-<h4>Editar um produto</h4>
+<br/><br/>
+
+<h2>Editar um produto</h2>
 <ul>
   <li>Envie a requisição <b>PUT</b> para o seguinte endpoint: https://apoleon.com.br/api/produto/{id}</li>
   <li>Formatação dos dados para envio ao endpoint: </li>
-</ul>
+
 
 
    ```json
@@ -54,3 +63,47 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
       "statusProduto": "Status do Produto editado (sem aspas)" 
     }
    ```
+<li>Resposta esperada:</li>
+
+  ```json
+    {
+      "status": true,
+      "message": "Produto atualizado com sucesso!"
+    }
+  ```
+
+<li>Caso a requisição falhe: </li>
+
+ ```json
+    {
+      "status": false,
+      "message": "Mensagem de erro"
+    }
+  ```
+
+</ul>
+  
+
+<br/><br/>
+
+<h2>Desativar um produto</h2>
+<ul>
+  <li>Envie a requisição <b>PATCH</b> para o seguinte endpoint: https://apoleon.com.br/api/desativarProduto/{id}</li>
+  <li>Resposta esperada: </li>
+
+  ```json
+    {
+        "status": true,
+        "message": "Produto desativado com sucesso!"
+    }
+  ```
+
+<li>Caso a requisição falhe: </li>
+
+ ```json
+    {
+      "status": false,
+      "message": "Mensagem de erro"
+    }
+  ```
+</ul>
