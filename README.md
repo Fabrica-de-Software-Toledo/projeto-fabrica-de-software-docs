@@ -107,3 +107,27 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
     }
   ```
 </ul>
+
+<br/><br/>
+
+<h2>Ativar um produto</h2>
+<ul>
+  <li>Envie a requisição <b>PATCH</b> para o seguinte endpoint: https://apoleon.com.br/api/ativarProduto/{id}</li>
+  <li>Resposta esperada: </li>
+
+  ```json
+    {
+        "status": true,
+        "message": "Produto ativado com sucesso!"
+    }
+  ```
+
+<li>Caso a requisição falhe: </li>
+
+ ```json
+    {
+      "status": false,
+      "message": "Mensagem de erro"
+    }
+  ```
+</ul>
