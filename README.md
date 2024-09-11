@@ -35,3 +35,22 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
       "statusProduto": "Status do Produto (sem aspas)" 
     }
    ```
+
+<h4>Editar um produto</h4>
+<ul>
+  <li>Envie a requisição <b>PUT</b> para o seguinte endpoint: https://apoleon.com.br/api/produto/{id}</li>
+  <li>Formatação dos dados para envio ao endpoint: </li>
+</ul>
+
+
+   ```json
+    {
+      "nomeProduto": "Nome do Produto editado",
+      "descricaoProduto": "Descrição do produto editado",
+      "tamanhoProduto": "Tamanho do Produto editado",
+      "valorProduto": "Valor do produto editado (sem aspas)" ,
+      "imgProduto": "Imagem do Produto editado",
+      "qrCodeProduto": "QR Code do Produto editado",
+      "statusProduto": "Status do Produto editado (sem aspas)" 
+    }
+   ```
