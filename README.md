@@ -131,3 +131,31 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
     }
   ```
 </ul>
+
+<hr/>
+
+<h2>Listar usuários</h2>
+<ul>
+  <li>Envie a requisição <b>GET</b> para o seguinte endpoint: https://apoleon.com.br/api/listarUsuarios</li>
+  <li>Resposta esperada: </li>
+
+  ```json
+    {
+      "id": "id do usuário,
+      "name": "nome do usuário",
+      "email": "email do usuário",
+      "email_verified_at": "data de verificação do email",
+      "created_at": "data de criação do usuário",
+      "updated_at": "data de atualização do usuário"
+    }
+  ```
+
+<li>Caso a requisição falhe: </li>
+
+ ```json
+    {
+      "status": false,
+      "message": "Mensagem de erro"
+    }
+  ```
+</ul>
