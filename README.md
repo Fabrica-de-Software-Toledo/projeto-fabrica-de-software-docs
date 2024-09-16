@@ -141,7 +141,7 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
 
   ```json
     {
-      "id": "id do usuário,
+      "id": "id do usuário",
       "name": "nome do usuário",
       "email": "email do usuário",
       "email_verified_at": "data de verificação do email",
