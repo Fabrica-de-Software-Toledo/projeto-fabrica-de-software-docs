@@ -19,14 +19,14 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
 
 <h2>Listar produtos</h2>
 <ul>
-  <li>Envie a requisição <b>GET</b> para o seguinte endpoint: https://apoleon.com.br/api/listarProdutos</li>
+  <li>Envie a requisição <b>GET</b> para o seguinte endpoint: https://apoleon.com.br/api/produtos</li>
 </ul>
 
 <br/><br/>
 
 <h2>Inserir um novo produto</h2>
 <ul>
-  <li>Envie a requisição <b>POST</b> para o seguinte endpoint: https://apoleon.com.br/api/inserirProduto</li>
+  <li>Envie a requisição <b>POST</b> para o seguinte endpoint: https://apoleon.com.br/api/produto</li>
   <li>Formatação dos dados para envio ao endpoint: </li>
 </ul>
 
@@ -88,7 +88,7 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
 
 <h2>Desativar um produto</h2>
 <ul>
-  <li>Envie a requisição <b>PATCH</b> para o seguinte endpoint: https://apoleon.com.br/api/desativarProduto/{id}</li>
+  <li>Envie a requisição <b>PATCH</b> para o seguinte endpoint: https://apoleon.com.br/api/produto/{id}/desativar</li>
   <li>Resposta esperada: </li>
 
   ```json
@@ -112,7 +112,7 @@ Esse projeto é feito para a documentação da disciplina de Qualidade de Softwa
 
 <h2>Ativar um produto</h2>
 <ul>
-  <li>Envie a requisição <b>PATCH</b> para o seguinte endpoint: https://apoleon.com.br/api/ativarProduto/{id}</li>
+  <li>Envie a requisição <b>PATCH</b> para o seguinte endpoint: https://apoleon.com.br/api/produto/{id}/ativar</li>
   <li>Resposta esperada: </li>
 
   ```json
